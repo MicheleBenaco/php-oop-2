@@ -1,7 +1,8 @@
 <?php
-
+require_once __DIR__ . '/traits/Peso.php';
 class Prodotto
 {
+    use Peso;
     public $nome;
     public $poster;
     public $categoria;

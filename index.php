@@ -17,11 +17,14 @@ require_once __DIR__ . "/Models/Cuccia.php";
 $prod = [
     new Cibo("Royal Canin Urinary S/O Crocchette", "https://www.farmapets.it/2420-large_default/royal-canin-urinary-so-crocchette.jpg", new Categoria("Cane"), 20.00, "cibo", 2000, "12-12-22", "sei mesi", "proteine"),
     new Gioco("KONG Gatto Connects Bat 'n Spring", "https://arcaplanet.vtexassets.com/arquivos/ids/223733/kong-gatto-connects-bat-n-spring.jpg?v=1757238203", new Categoria("Gatto"), 11.05, "KONG ideale per stimolare la curiosità del gatto.", "gioco"),
-    new Cuccia("Cuccia Amaca per Calorifero", "https://arcaplanet.vtexassets.com/arquivos/ids/209724/YES--Cuccia-per-gatti-da-calorifero-Jane.jpg?v=1757251397", new Categoria("Gatto"), 12.60, "marrone", 48, "cuccia"),
+    new Cuccia("Cuccia Amaca per Calorifero", "https://arcaplanet.vtexassets.com/arquivos/ids/209724/YES--Cuccia-per-gatti-da-calorifero-Jane.jpg?v=1757251397", new Categoria("Gatto"), 12.60, "marrone", 48, "cuccia"),   
+        $prod->setPeso("40","g"),
+       
+
+        
 ];
 
-
-
+echo $prod->getPeso();
 
 ?>
 
